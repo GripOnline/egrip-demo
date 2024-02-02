@@ -1,0 +1,59 @@
+{
+	"name": "grip/egrip-demo",
+	"type": "project",
+	"repositories": [
+		{
+			"type": "composer",
+			"url": "https://composer.hosting.grip.nl/"
+		}
+	],
+	"require": {
+		"grip/bb": "*",
+		"grip/cms": "*",
+		"grip/cms-renderer": "*",
+		"grip/di": "*",
+		"grip/egrip-plugin-auth-module": "*",
+		"grip/egrip-plugin-cms-frontend": "*",
+		"grip/egrip-plugin-cms-module": "*",
+		"grip/egrip-plugin-cms-schema": "*",
+		"grip/egrip-plugin-cms-services": "*",
+		"grip/egrip-plugin-geo-schema": "*",
+		"grip/egrip-plugin-ml-module": "*",
+		"grip/egrip-plugin-ml-schema": "*",
+		"grip/egrip-plugin-ml-services": "*",
+		"grip/egrip-plugin-vwm-entitymanager-doctrine": "*",
+		"grip/egrip-plugin-vwm-legacy-site": "*",
+		"grip/egrip-plugin-vwm-log-monolog": "*",
+		"grip/egrip-plugin-vwm-module": "*",
+		"grip/egrip-plugin-vwm-schema": "*",
+		"grip/egrip-plugin-vwm-schemamanager": "*",
+		"grip/egrip-plugin-vwm-services": "*",
+		"grip/egrip-plugin-wst-module": "*",
+		"grip/egrip-plugin-wst-schema": "*",
+		"grip/egrip-style-default_clean": "*",
+		"grip/ml": "*",
+		"grip/pear-al": "*",
+		"grip/pear-bb": "*",
+		"grip/pear-cms": "*",
+		"grip/pear-di": "*",
+		"grip/pear-ml": "*",
+		"grip/pear-shop": "*",
+		"grip/pear-vwm": "*",
+		"grip/vwm": "*",
+		"grip/vwm-legacy-site": "*"
+	},
+	"require-dev": {
+		"phpunit/phpunit": "*"
+	},
+	"autoload": {
+		"classmap": [],
+		"psr-4": {
+			"Grip\\": "src/Grip"
+		}
+	},
+	"config": {
+		"allow-plugins": {
+			"grip/egrip-plugin-installer-plugin": true
+		}
+	}
+}

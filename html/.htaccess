@@ -1,0 +1,16 @@
+# $Id: .htaccess,v 1.12 2009-03-11 15:38:24 hoogeboom Exp $
+
+RewriteEngine on
+
+# add trailing slash to files without extensions (cms urls)
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !\.
+RewriteCond %{REQUEST_METHOD} GET
+RewriteRule ^(.+[^/])$ /$1/ [R=permanent,L]
+
+# rewrite requests to index.php
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_URI} !^/index.php
+RewriteRule .* /index.php/ [L]

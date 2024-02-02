@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vwm xmlns="http://www.e-grip.nl/vwm/config" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" name="egrip" version="4.0" releasedate="2021-07-30" xsi:schemaLocation="http://www.e-grip.nl/vwm/config https://pear.grip.nl/DTD/VWM/1_20_0/vwm_config.xsd">
+  <!-- environment specific definitions -->
+  <environment name="test" domainsuffix="test.example.com">
+    <!-- test-specific parameters -->
+    <param name="database" value="mysqli://user:pass@dbhost/egrip-test"/>
+    <param name="clientwebsiteurl" value="http://test.e-grip.nl/"/>
+    <param name="clientwebsitesecured" value="yes"/>
+  </environment>
+  <!-- default parameters below -->
+  <param name="site_id" value=""/>
+  <param name="site_secret" value=""/>
+  <param name="database" value=""/>
+  <param name="context_factory_class" value="Grip\Vwm\Core\DefaultContextFactory"/>
+  <!-- file paths, relative to siteroot (must end with slash) -->
+  <param name="datadir" value="{siteroot}data/"/>
+  <param name="vwmdir" value="{siteroot}include/vwm/"/>
+  <param name="uploaddir" value="{siteroot}data/uploads/"/>
+  <param name="cachedir" value="{siteroot}cache/"/>
+  <param name="documentrootdir" value="{siteroot}html/"/>
+  <param name="styleroot" value="{siteroot}plugins/styles/"/>
+  <!-- backend parameters -->
+  <param name="vwm_style" value="armadillo"/>
+  <param name="vwmcontrollerurl" value="/vwm/"/>
+  <param name="vwmdataurl" value="/pear/VWM/"/>
+  <param name="fckdataurl" value="/pear/FCKEditor/"/>
+  <param name="showegriptoolenabler" value="true"/>
+  <!-- bitflag indicating if front-end is password-protected -->
+  <param name="clientwebsitesecured" value="no"/>
+  <!-- account security: vwm_user accounts get blocked after this number of failed login attempts -->
+  <param name="max_failed_login_attempts" value="10"/>
+  <!-- time (in minutes) an account gets blocked after max failed attempts is reached -->
+  <param name="account_block_time" value="30"/>
+  <!-- tarpit: time (in seconds) the application waits after failed login -->
+  <param name="failed_account_waittime" value="2"/>
+  <!-- prefix used for form elements -->
+  <param name="formelement_prefix" value="frm"/>
+  <!-- back-end RTE options -->
+  <param name="wysiwyg_editor" value="tinymce"/>
+  <param name="wysiwyg_image_chooser" value="popup"/>
+  <!-- session parameters -->
+  <param name="session_cookie_lifetime" value="28800"/>
+  <param name="session_check_status" value="yes"/>
+  <!-- locale parameters -->
+  <param name="timezone_profile" value="Europe/Amsterdam"/>
+  <param name="defaultlang" value="en"/>
+  <!-- error reporting parameters -->
+  <param name="display_errors" value="OFF"/>
+  <!-- modules -->
+  <module name="VWM" enabled="true"/>
+  <module name="CMS" enabled="true"/>
+  <module name="ML" enabled="true"/>
+  <module name="BB" enabled="true"/>
+  <module name="CRM" enabled="true"/>
+  <module name="Auth" enabled="true"/>
+  <module name="WST" enabled="true"/>
+  <module name="GEO" enabled="true"/>
+  <module name="AL" enabled="true"/>
+  <module name="SHOP" enabled="true"/>
+</vwm>

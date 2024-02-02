@@ -1,0 +1,13 @@
+/.buildpath
+/.project
+/.settings
+/build/
+/cache/
+/composer.lock
+/data
+/data/
+/logs/
+/plugins/
+/plugins.lock
+/vendor/
+/vwm_config.xml
