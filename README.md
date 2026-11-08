@@ -74,7 +74,7 @@ php script/run.php <MODULE>:<Command>
 
 # Documentation
 
-The generic e-Grip 4 documentation ([GripOnline/egrip4-docs](https://github.com/GripOnline/egrip4-docs)) is a
-`require-dev` dependency of this project. After `composer update` it is available in `vendor/grip/egrip4-docs/docs/`.
+The generic e-Grip 4 documentation ([GripOnline/egrip-docs](https://github.com/GripOnline/egrip-docs)) is a
+`require-dev` dependency of this project. After `composer update` it is available in `vendor/grip/egrip-docs/docs/`.
 Start with the developer's guide (`developers-guide.md`), which explains the application framework, plugins and
 events, the CMS engine and how to build custom functionality.

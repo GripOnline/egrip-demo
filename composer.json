@@ -43,7 +43,7 @@
 		"grip/vwm-legacy-site": "*"
 	},
 	"require-dev": {
-		"grip/egrip4-docs": "*",
+		"grip/egrip-docs": "*",
 		"phpunit/phpunit": "*"
 	},
 	"autoload": {
